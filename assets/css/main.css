@@ -1,4 +1,4 @@
-@import url("fontawesome-all.min.css");
+/* @import url("fontawesome-all.min.css"); */
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 
 /*
@@ -2415,6 +2415,11 @@ input, select, textarea {
 				width: 2.5em;
 			}
 
+			ul.feature-icons img {
+				width: 80px;
+				height: 80px;
+			}
+
 /* Icons */
 
 	ul.icons {
@@ -2433,8 +2438,7 @@ input, select, textarea {
 			}
 
 			ul.icons li .icon:before {
-				/* font-size: 1.25em; */
-				font-size: 1.5em;
+				font-size: 1.25em;
 			}
 
 /* Table */
