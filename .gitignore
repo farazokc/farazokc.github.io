@@ -1,0 +1,15 @@
+########## Visual Studio Code files START ##########
+.vscode/*
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+########## Visual Studio Code files END ##########
+
+########## VSC Extensions START ##########
+
+.cspell/*
+
+########## VSC Extensions END ##########

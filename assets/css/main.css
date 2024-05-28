@@ -2812,7 +2812,8 @@ input, select, textarea {
 
 				#header > footer .icons li a {
 					/* color: #b7eadc; */
-					color: rgb(0, 170, 255);
+					/* color: rgb(0, 170, 255); */
+					color: #fff;
 				}
 
 		#header > nav {

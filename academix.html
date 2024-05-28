@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Faraz Naeem Piracha</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://kit.fontawesome.com/86bcaea8d5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="shortcut icon" href="./images/avatar.jpg" type="image/x-icon">
+</head>
+
+<body class="is-preload">
+
+    <!-- Header -->
+    <section id="header">
+        <header>
+            <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+            <h1 id="logo"><a href="#">Faraz Naeem Piracha</a></h1>
+            <p>The unavoidable first step in creating something valuable
+                is creating something worthless.</p>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li><a href="#one" class="active">Case Study</a></li>
+                <li><a href="./index.html">Home</a></li>
+            </ul>
+        </nav>
+        <footer>
+            <ul class="icons">
+                <!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+                <li><a href="https://github.com/farazokc/" class="icon brands fa-github"><span
+                            class="label">Github</span></a></li>
+                <li><a href="https://www.linkedin.com/in/faraznp/" class="icon brands fa-linkedin"><span
+                            class="label">LinkedIn</span></a></li>
+                <li><a href="mailto:faraz29103@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a>
+                </li>
+                <li>
+                    <a href="faraz_naeem_cv.pdf" download="faraz_naeem_cv.pdf" class="icon solid fa-download"></a>
+                    <span class="label"></span>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </section>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- One -->
+            <section>
+                <div class="image main" data-position="center">
+                    <img src="images/banner.jpg" alt="" />
+                </div>
+            </section>
+
+            <!-- Three -->
+            <section id="one">
+                <div class="container">
+                    <h2>Academix, A Case Study (under update)</h2>
+                    <div class="features">
+                        <span class="image fit"><img src="images/banner.jpg" alt="" /></span>
+                        <article>
+                            <div>
+                                <h3>
+                                    <em>The Egregious Process:</em>
+                                </h3>
+                                Before the start of every semester, the Academics department has to perform the
+                                following tasks:
+                                <ol>
+                                    <li>
+                                        An Excel workbook for the current semester is created, that contains all the
+                                        faculty, courses and sections that are present in each department.
+                                    </li>
+                                    <li>
+                                        The courses, faculty and sections that will be available in the upcoming
+                                        semester are listed on separate sheets.
+                                    </li>
+                                    <li>
+                                        A sparse matrix for the current semester is created on a separate sheet, with
+                                        faculty names on the left column and course short names on the table header.
+                                    </li>
+                                    <li>
+                                        The current courses are assigned to the teachers while manually updating their
+                                        assigned and unassigned loads.
+                                    </li>
+                                    <li>
+                                        After courses are assigned to faculty, their sections are created, and faculty
+                                        are decided for teaching each section.
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <div>
+                                <h3>
+                                    <em>Problems faced due to this process:</em>
+                                </h3>
+                                <p>
+                                    Needless to say, this manual process is the root of many problems being faced by the
+                                    university. A non-exhaustive list of the problems is as follows:
+                                <ul>
+                                    <li>
+                                        Our FYP supervisor, the Head of Department for CS, showed us the sparse matrix he
+                                        had built for the current semester (Fall 2023). Just for an idea, 80 faculty and
+                                        200 courses (at least), created a sparse matrix of
+                                        <pre><code>200 courses x 80 faculty = 16,000 cells</code></pre>
+                                    </li>
+                                    <li>
+                                        <strong>Timetable clashes</strong>: This process results in clashes for students from all
+                                        departments. As a result, the academics department keeps tweaking and sometimes
+                                        outright scraps the time table. This process stops only after the <strong
+                                            style="color: red;"><em>first 6 weeks</em></strong> (sometimes earlier) of
+                                        the semester passes.
+                                    </li>
+                                    <li>
+                                        <strong>Teacher preferences</strong>: They are not catered in the current system. If a faculty
+                                        member specifically asks for teaching a course, then they may be accommodated.
+                                    </li>
+                                    <li>
+                                        <strong>Teacher history</strong>: Similarly, the teaching history of the faculty may not play any
+                                        role in the assignment.
+                                    </li>
+                                    <li>
+                                        <strong>Over and under assignment</strong>: Some faculty members may be assigned courses over or
+                                        under the threshold. This is fixed afterwards when faculty member notifies the
+                                        Academics department.
+                                    </li>
+                                </ul>
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3>
+                                    <em>
+                                        Solution Design:
+                                    </em>
+                                </h3>
+                                <p>
+                                    After extensively understanding this problem, we came to the conclusion that the problem was present in the university's business process, but as we cannot change it, we decided to create a solution to mitigate the problem as much as we could.
+                                </p>
+                                <p>
+                                    Our solution contains 2 systems. A web app (<em>using React, Express, Node JS, and MySQL</em>) and a desktop app (<em>C# and Unity Engine</em>). They both serve different purposes and as their design is modular, they can also be used individually.
+                                </p>
+                                <h4>
+                                    <strong>
+                                        Web Application
+                                    </strong>
+                                </h4>
+                                <p>
+                                    The purpose of the <strong>Web App</strong> is management of information and creation of course allotments for the faculty members. This web app also streamlines the problematic manual process currently in place.
+                                </p>
+                                The web app performs the following functions:
+                                <ol>
+                                    <li>
+                                        Management of faculty, courses, and sections.
+                                    </li>
+                                    <li>
+                                        Assignment of faculty based on status (on campus or on leave).
+                                    </li>
+                                    <li>
+                                        Easier course assignment considering faculty preferences and history.
+                                    </li>
+                                    <li>
+                                        Customizable course loads for faculty.
+                                    </li>
+                                    <li>
+                                        Bulk data addition through CSV files.
+                                    </li>
+                                </ol>
+                                <h4>
+                                    <strong>
+                                        Desktop Application
+                                    </strong>
+                                </h4>
+                                <p>
+                                    The purpose of the <strong>Desktop App</strong> is solely timetable management, which is no mean feat. Clash resolution has become increasingly difficult as number of students, sections and courses have grown.
+                                </p>
+                                <p>
+                                    Therefore, we developed a knowledge-based system that follows rules/constraint that we define for the system. The custom rules are defined in a text file in easy to use and understand format. Some default constraints present in the system are:
+                                    <ul>
+                                        <li>
+                                            Same faculty member cannot have more than 1 class in the same time slot.
+                                        </li>
+                                        <li>
+                                            Same section cannot have more than 1 class in the same time slot.
+                                        </li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <ul class="copyright">
+                    <li>&copy; Faraz Naeem Piracha. All rights reserved.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
